@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# iNotebook - Your Personal Note Manager
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+iNotebook is a full-stack web application developed using the MERN stack (MongoDB, Express, React, Node.js). The application allows users to manage their personal notes with features such as authentication, note creation, editing, deletion, and viewing.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **User Authentication**:
+  - Secure user registration and login using JWT (JSON Web Tokens).
+  - Passwords are securely hashed using `bcrypt`.
 
-### `npm start`
+- **Note Management**:
+  - **Create Notes**: Users can create new notes.
+  - **View Notes**: All notes are displayed in a user-friendly interface.
+  - **Edit Notes**: Users can edit the content of their notes.
+  - **Delete Notes**: Users can delete notes they no longer need.
+  - Notes are stored securely in the MongoDB database and are accessible only by the authenticated user.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Responsive Design**:
+  - The application is fully responsive, ensuring a seamless experience on both desktop and mobile devices.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+- **MongoDB**: NoSQL database for storing user notes and information.
+- **Express.js**: Backend framework used to build the RESTful API.
+- **React.js**: Frontend library used for building the user interface.
+- **Node.js**: JavaScript runtime environment for running the backend server.
+- **JWT**: For secure authentication and session management.
+- **Mongoose**: ODM for MongoDB, used to interact with the database.
+- **bcrypt**: For hashing passwords securely.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation and Setup
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Node.js**: Make sure Node.js is installed on your machine.
+- **MongoDB**: Set up MongoDB locally or use a cloud service like MongoDB Atlas.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Steps to Set Up the Project
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Clone the Repository**:
+    ```bash
+    git clone https://github.com/AtrePramod/inotebook.git
+    ```
 
-### `npm run eject`
+2. **Install Backend Dependencies**:
+    ```bash
+    cd ../backend
+    npm install
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. **Install Frontend Dependencies**:
+    ```bash
+    npm install
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. **Run the Backend**:
+    ```bash
+    cd ../backend
+    npm start
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+6. **Run the Frontend**:
+    ```bash
+    npm start
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+7. **Access the Application**:
+    - Open your browser and go to `http://localhost:3000` to use iNotebook.
 
-## Learn More
+## Usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Register/Login**: Create an account or log in to access your notes.
+- **Create Notes**: Add new notes with titles and descriptions.
+- **View Notes**: Browse through all your saved notes.
+- **Edit Notes**: Modify existing notes to update their content.
+- **Delete Notes**: Remove notes that you no longer need.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For any questions or issues, please contact [pramodatre05@gmail.com](mailto:pramodatre05@gmail.com).
